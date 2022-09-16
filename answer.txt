@@ -1,0 +1,113 @@
+1) What is a gitignore file and what should it include for a Java project?
+
+A gitignore file tells git not to track specific files and folders that we dont want them to get uploaded into our main repository. This helps us in ignoring local path configurations and other such cases. 
+
+In Java Project, the gitignore file contains classes, maven or gradle files or other IDE specific files
+
+Example of gitignore file in java could be,
+
+##############################
+## Java
+##############################
+.mtj.tmp/
+*.class
+*.jar
+*.war
+*.ear
+*.nar
+hs_err_pid*
+
+##############################
+## Maven
+##############################
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+pom.xml.bak
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+
+##############################
+## Gradle
+##############################
+bin/
+build/
+.gradle
+.gradletasknamecache
+gradle-app.setting
+!gradle-wrapper.jar
+
+##############################
+## IntelliJ
+##############################
+out/
+.idea/
+.idea_modules/
+*.iml
+*.ipr
+*.iws
+
+##############################
+## Eclipse
+##############################
+.settings/
+bin/
+tmp/
+.metadata
+.classpath
+.project
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.loadpath
+.factorypath
+
+##############################
+## NetBeans
+##############################
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+nbactions.xml
+nb-configuration.xml
+
+##############################
+## Visual Studio Code
+##############################
+.vscode/
+.code-workspace
+
+##############################
+## OS X
+##############################
+.DS_Store
+
+
+2) What does fast-forward in git mean?
+
+This happends when git moves the branch pointer to point at the Incoming commit rather than constructing a merge commit
+
+
+3) Why should you have different branches?
+
+Having different branches helps a lot when multiple people working on a same project but on different features so that the people will get less conflicts when merging back.
+ 
+It not only allows each developer to work seperately on his feature but also helps git to easily merge versions once the development is done
+
+
+4) In a project how many remote Git repositories do you usually have?
+
+We can have as many as we want but we usually have one remote repository named "origin". We can create other remote repositories if we need
+
+
+
+
